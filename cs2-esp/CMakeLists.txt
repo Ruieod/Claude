@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 3.20)
+project(cs2_esp CXX)
+set(CMAKE_CXX_STANDARD 17)
+add_executable(cs2_esp main.cpp)
+target_compile_definitions(cs2_esp PRIVATE UNICODE _UNICODE)
+target_link_libraries(cs2_esp PRIVATE gdi32 user32)
